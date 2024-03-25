@@ -904,10 +904,11 @@ profile_plot = function(sig_list = NULL, color = NULL, line_size = 1, legend_fs 
   }
   
   #y_max = max(unlist(lapply(sig_summary, max, na.rm = TRUE)))
-  y_max = 1.0
-  y_min = min(unlist(lapply(sig_summary, min, na.rm = TRUE)))
+  y_max = 1.55
+  #y_min = min(unlist(lapply(sig_summary, min, na.rm = TRUE)))
+  y_min = 0
   #ylabs = pretty(c(y_min, y_max), n = 5)
-  ylabs = c(0.2, 0.4, 0.6, 0.8, 1)
+  ylabs = c(0, 0.3875, 0.775, 1.1625, 1.55)
   
   
   x_max = max(unlist(lapply(sig_summary, length)))
